@@ -1,9 +1,0 @@
-#ifndef FLAGCONTROL_H_INCLUDED
-#define FLAGCONTROL_H_INCLUDED
-
-enum Flags
-{
-
-};
-
-#endif // FLAGCONTROL_H_INCLUDED
