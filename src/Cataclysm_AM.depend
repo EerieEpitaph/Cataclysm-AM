@@ -1,0 +1,279 @@
+# depslib dependency file v1.0
+1523391183 source:d:\files\progetti\c++\cataclysm_am\main.cpp
+	<exception>
+	<string>
+	<iostream>
+	<SDL.h>
+	"Util.h"
+	"Item.h"
+	"Container.h"
+
+1523389398 d:\files\progetti\c++\cataclysm_am\util.h
+	<string>
+
+1523387761 d:\files\progetti\c++\cataclysm_am\item.h
+	<iostream>
+	<string.h>
+	<memory>
+	<vector>
+	<unordered_map>
+	"SDL.h"
+	"SDL_image.h"
+	"Util.h"
+
+1523383093 d:\files\progetti\c++\cataclysm_am\item.cpp
+	"Item.h"
+
+1523389344 source:d:\files\progetti\c++\cataclysm_am\item.cpp
+	"nlohmann/json.hpp"
+	"Item.h"
+	"Util.h"
+
+1523384758 d:\files\progetti\c++\cataclysm_am\nlohmann\json.hpp
+	<algorithm>
+	<cassert>
+	<ciso646>
+	<cstddef>
+	<functional>
+	<initializer_list>
+	<iosfwd>
+	<iterator>
+	<numeric>
+	<string>
+	<utility>
+	"json_fwd.hpp"
+	"detail/macro_scope.hpp"
+	"detail/meta.hpp"
+	"detail/exceptions.hpp"
+	"detail/value_t.hpp"
+	"detail/conversions/from_json.hpp"
+	"detail/conversions/to_json.hpp"
+	"detail/input/input_adapters.hpp"
+	"detail/input/lexer.hpp"
+	"detail/input/parser.hpp"
+	"detail/iterators/primitive_iterator.hpp"
+	"detail/iterators/internal_iterator.hpp"
+	"detail/iterators/iter_impl.hpp"
+	"detail/iterators/iteration_proxy.hpp"
+	"detail/iterators/json_reverse_iterator.hpp"
+	"detail/output/output_adapters.hpp"
+	"detail/input/binary_reader.hpp"
+	"detail/output/binary_writer.hpp"
+	"detail/output/serializer.hpp"
+	"detail/json_ref.hpp"
+	"detail/json_pointer.hpp"
+	"adl_serializer.hpp"
+	"detail/macro_unscope.hpp"
+
+1521059959 d:\files\progetti\c++\cataclysm_am\nlohmann\json_fwd.hpp
+	<cstdint>
+	<map>
+	<memory>
+	<string>
+	<vector>
+
+1521059959 d:\files\progetti\c++\cataclysm_am\nlohmann\detail\macro_scope.hpp
+
+1523384775 d:\files\progetti\c++\cataclysm_am\nlohmann\detail\meta.hpp
+	<ciso646>
+	<cstddef>
+	<limits>
+	<type_traits>
+	<utility>
+	"json_fwd.hpp"
+	"detail/macro_scope.hpp"
+
+1521059959 d:\files\progetti\c++\cataclysm_am\nlohmann\detail\exceptions.hpp
+	<exception>
+	<stdexcept>
+	<string>
+
+1521059959 d:\files\progetti\c++\cataclysm_am\nlohmann\detail\value_t.hpp
+	<array>
+	<ciso646>
+	<cstddef>
+	<cstdint>
+
+1523384796 d:\files\progetti\c++\cataclysm_am\nlohmann\detail\conversions\from_json.hpp
+	<algorithm>
+	<array>
+	<ciso646>
+	<forward_list>
+	<iterator>
+	<string>
+	<tuple>
+	<type_traits>
+	<utility>
+	<valarray>
+	"detail/exceptions.hpp"
+	"detail/macro_scope.hpp"
+	"detail/meta.hpp"
+	"detail/value_t.hpp"
+
+1523384808 d:\files\progetti\c++\cataclysm_am\nlohmann\detail\conversions\to_json.hpp
+	<ciso646>
+	<iterator>
+	<tuple>
+	<type_traits>
+	<utility>
+	<valarray>
+	<vector>
+	"detail/meta.hpp"
+	"detail/value_t.hpp"
+
+1523384814 d:\files\progetti\c++\cataclysm_am\nlohmann\detail\input\input_adapters.hpp
+	<algorithm>
+	<array>
+	<cassert>
+	<cstddef>
+	<cstring>
+	<ios>
+	<istream>
+	<iterator>
+	<memory>
+	<numeric>
+	<string>
+	<type_traits>
+	<utility>
+	"detail/macro_scope.hpp"
+
+1523384826 d:\files\progetti\c++\cataclysm_am\nlohmann\detail\input\lexer.hpp
+	<clocale>
+	<cstddef>
+	<cstdlib>
+	<initializer_list>
+	<ios>
+	<iomanip>
+	<sstream>
+	<string>
+	<vector>
+	"detail/macro_scope.hpp"
+	"detail/input/input_adapters.hpp"
+
+1523384847 d:\files\progetti\c++\cataclysm_am\nlohmann\detail\input\parser.hpp
+	<cassert>
+	<cmath>
+	<cstdint>
+	<functional>
+	<string>
+	<utility>
+	"detail/exceptions.hpp"
+	"detail/macro_scope.hpp"
+	"detail/input/input_adapters.hpp"
+	"detail/input/lexer.hpp"
+	"detail/value_t.hpp"
+
+1521059959 d:\files\progetti\c++\cataclysm_am\nlohmann\detail\iterators\primitive_iterator.hpp
+	<cstddef>
+	<limits>
+
+1523384854 d:\files\progetti\c++\cataclysm_am\nlohmann\detail\iterators\internal_iterator.hpp
+	"detail/iterators/primitive_iterator.hpp"
+
+1523384877 d:\files\progetti\c++\cataclysm_am\nlohmann\detail\iterators\iter_impl.hpp
+	<ciso646>
+	<iterator>
+	<type_traits>
+	"detail/exceptions.hpp"
+	"detail/iterators/internal_iterator.hpp"
+	"detail/iterators/primitive_iterator.hpp"
+	"detail/macro_scope.hpp"
+	"detail/meta.hpp"
+	"detail/value_t.hpp"
+
+1523384881 d:\files\progetti\c++\cataclysm_am\nlohmann\detail\iterators\iteration_proxy.hpp
+	<cstddef>
+	<string>
+	"detail/value_t.hpp"
+
+1521059959 d:\files\progetti\c++\cataclysm_am\nlohmann\detail\iterators\json_reverse_iterator.hpp
+	<cstddef>
+	<iterator>
+	<utility>
+
+1521059961 d:\files\progetti\c++\cataclysm_am\nlohmann\detail\output\output_adapters.hpp
+	<algorithm>
+	<cstddef>
+	<ios>
+	<iterator>
+	<memory>
+	<ostream>
+	<string>
+	<vector>
+
+1523384895 d:\files\progetti\c++\cataclysm_am\nlohmann\detail\input\binary_reader.hpp
+	<algorithm>
+	<array>
+	<cassert>
+	<cmath>
+	<cstddef>
+	<cstdint>
+	<cstring>
+	<iomanip>
+	<ios>
+	<iterator>
+	<limits>
+	<sstream>
+	<string>
+	<utility>
+	"detail/input/input_adapters.hpp"
+	"detail/exceptions.hpp"
+	"detail/macro_scope.hpp"
+	"detail/value_t.hpp"
+
+1523384908 d:\files\progetti\c++\cataclysm_am\nlohmann\detail\output\binary_writer.hpp
+	<algorithm>
+	<array>
+	<cstdint>
+	<cstring>
+	<limits>
+	"detail/input/binary_reader.hpp"
+	"detail/output/output_adapters.hpp"
+
+1523384927 d:\files\progetti\c++\cataclysm_am\nlohmann\detail\output\serializer.hpp
+	<algorithm>
+	<array>
+	<cassert>
+	<ciso646>
+	<clocale>
+	<cmath>
+	<cstddef>
+	<cstdint>
+	<cstdio>
+	<iomanip>
+	<iterator>
+	<limits>
+	<string>
+	<sstream>
+	<type_traits>
+	"detail/exceptions.hpp"
+	"detail/conversions/to_chars.hpp"
+	"detail/macro_scope.hpp"
+	"detail/meta.hpp"
+	"detail/output/output_adapters.hpp"
+	"detail/value_t.hpp"
+
+1521059959 d:\files\progetti\c++\cataclysm_am\nlohmann\detail\json_ref.hpp
+	<initializer_list>
+	<utility>
+
+1523384938 d:\files\progetti\c++\cataclysm_am\nlohmann\detail\json_pointer.hpp
+	<cassert>
+	<numeric>
+	<string>
+	<vector>
+	"detail/macro_scope.hpp"
+	"detail/exceptions.hpp"
+	"detail/value_t.hpp"
+
+1523384948 d:\files\progetti\c++\cataclysm_am\nlohmann\adl_serializer.hpp
+	<utility>
+	"detail/conversions/from_json.hpp"
+	"detail/conversions/to_json.hpp"
+
+1521059959 d:\files\progetti\c++\cataclysm_am\nlohmann\detail\macro_unscope.hpp
+
+1523389517 d:\files\progetti\c++\cataclysm_am\container.h
+	"Item.h"
+	<vector>
+
