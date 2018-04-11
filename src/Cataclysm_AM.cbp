@@ -49,31 +49,7 @@
 		<Unit filename="../libs/LinkedList.h" />
 		<Unit filename="../libs/Tree().h" />
 		<Unit filename="../libs/Tree.h" />
-		<Unit filename="../libs/nlohmann/adl_serializer.hpp" />
-		<Unit filename="../libs/nlohmann/detail/conversions/from_json.hpp" />
-		<Unit filename="../libs/nlohmann/detail/conversions/to_chars.hpp" />
-		<Unit filename="../libs/nlohmann/detail/conversions/to_json.hpp" />
-		<Unit filename="../libs/nlohmann/detail/exceptions.hpp" />
-		<Unit filename="../libs/nlohmann/detail/input/binary_reader.hpp" />
-		<Unit filename="../libs/nlohmann/detail/input/input_adapters.hpp" />
-		<Unit filename="../libs/nlohmann/detail/input/lexer.hpp" />
-		<Unit filename="../libs/nlohmann/detail/input/parser.hpp" />
-		<Unit filename="../libs/nlohmann/detail/iterators/internal_iterator.hpp" />
-		<Unit filename="../libs/nlohmann/detail/iterators/iter_impl.hpp" />
-		<Unit filename="../libs/nlohmann/detail/iterators/iteration_proxy.hpp" />
-		<Unit filename="../libs/nlohmann/detail/iterators/json_reverse_iterator.hpp" />
-		<Unit filename="../libs/nlohmann/detail/iterators/primitive_iterator.hpp" />
-		<Unit filename="../libs/nlohmann/detail/json_pointer.hpp" />
-		<Unit filename="../libs/nlohmann/detail/json_ref.hpp" />
-		<Unit filename="../libs/nlohmann/detail/macro_scope.hpp" />
-		<Unit filename="../libs/nlohmann/detail/macro_unscope.hpp" />
-		<Unit filename="../libs/nlohmann/detail/meta.hpp" />
-		<Unit filename="../libs/nlohmann/detail/output/binary_writer.hpp" />
-		<Unit filename="../libs/nlohmann/detail/output/output_adapters.hpp" />
-		<Unit filename="../libs/nlohmann/detail/output/serializer.hpp" />
-		<Unit filename="../libs/nlohmann/detail/value_t.hpp" />
-		<Unit filename="../libs/nlohmann/json.hpp" />
-		<Unit filename="../libs/nlohmann/json_fwd.hpp" />
+		<Unit filename="../libs/json.hpp" />
 		<Unit filename="Actor.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
@@ -86,6 +62,12 @@
 			<Option target="Debug" />
 		</Unit>
 		<Unit filename="Item.h" />
+		<Unit filename="JsonParser.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="JsonParser.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="Part.h" />
 		<Unit filename="TexturePacker.h" />
 		<Unit filename="Tile.h" />
@@ -94,6 +76,7 @@
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="main.cpp" />
+		<Unit filename="test.json" />
 		<Extensions>
 			<code_completion />
 			<envvars />

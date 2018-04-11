@@ -277,7 +277,7 @@
 	"Item.h"
 	<vector>
 
-1523437682 source:d:\files\progetti\c++\cataclysm_am\src\main.cpp
+1523470696 source:d:\files\progetti\c++\cataclysm_am\src\main.cpp
 	<exception>
 	<string>
 	<iostream>
@@ -285,12 +285,12 @@
 	"Util.h"
 	"Item.h"
 	"Container.h"
-	"../libs/sqlite/sqlite3.h"
+	"JsonParser.h"
 
 1523393682 d:\files\progetti\c++\cataclysm_am\src\util.h
 	<string>
 
-1523438453 d:\files\progetti\c++\cataclysm_am\src\item.h
+1523465116 d:\files\progetti\c++\cataclysm_am\src\item.h
 	<iostream>
 	<string.h>
 	<memory>
@@ -300,7 +300,7 @@
 	"SDL_image.h"
 	"Util.h"
 
-1523393682 d:\files\progetti\c++\cataclysm_am\src\container.h
+1523448495 d:\files\progetti\c++\cataclysm_am\src\container.h
 	"Item.h"
 	<vector>
 
@@ -432,4 +432,151 @@
 	<unicode/utf16.h>
 	<ctype.h>
 	<math.h>
+
+1523466927 d:\files\progetti\c++\cataclysm_am\src\jsonparser.h
+	<iostream>
+	<fstream>
+	"../libs/json.hpp"
+
+1523465334 d:\files\progetti\c++\cataclysm_am\libs\json.hpp
+	<algorithm>
+	<cassert>
+	<ciso646>
+	<cstddef>
+	<functional>
+	<initializer_list>
+	<iosfwd>
+	<iterator>
+	<numeric>
+	<string>
+	<utility>
+	<cstdint>
+	<map>
+	<memory>
+	<string>
+	<vector>
+	<ciso646>
+	<cstddef>
+	<limits>
+	<type_traits>
+	<utility>
+	<exception>
+	<stdexcept>
+	<string>
+	<array>
+	<ciso646>
+	<cstddef>
+	<cstdint>
+	<algorithm>
+	<array>
+	<ciso646>
+	<forward_list>
+	<iterator>
+	<string>
+	<tuple>
+	<type_traits>
+	<utility>
+	<valarray>
+	<ciso646>
+	<iterator>
+	<tuple>
+	<type_traits>
+	<utility>
+	<valarray>
+	<vector>
+	<algorithm>
+	<array>
+	<cassert>
+	<cstddef>
+	<cstring>
+	<ios>
+	<istream>
+	<iterator>
+	<memory>
+	<numeric>
+	<string>
+	<type_traits>
+	<utility>
+	<clocale>
+	<cstddef>
+	<cstdlib>
+	<initializer_list>
+	<ios>
+	<iomanip>
+	<sstream>
+	<string>
+	<vector>
+	<cassert>
+	<cmath>
+	<cstdint>
+	<functional>
+	<string>
+	<utility>
+	<cstddef>
+	<limits>
+	<ciso646>
+	<iterator>
+	<type_traits>
+	<cstddef>
+	<string>
+	<cstddef>
+	<iterator>
+	<utility>
+	<algorithm>
+	<cstddef>
+	<ios>
+	<iterator>
+	<memory>
+	<ostream>
+	<string>
+	<vector>
+	<algorithm>
+	<array>
+	<cassert>
+	<cmath>
+	<cstddef>
+	<cstdint>
+	<cstring>
+	<iomanip>
+	<ios>
+	<iterator>
+	<limits>
+	<sstream>
+	<string>
+	<utility>
+	<algorithm>
+	<array>
+	<cstdint>
+	<cstring>
+	<limits>
+	<algorithm>
+	<array>
+	<cassert>
+	<ciso646>
+	<clocale>
+	<cmath>
+	<cstddef>
+	<cstdint>
+	<cstdio>
+	<iomanip>
+	<iterator>
+	<limits>
+	<string>
+	<sstream>
+	<type_traits>
+	<cassert>
+	<ciso646>
+	<cmath>
+	<cstdint>
+	<cstring>
+	<initializer_list>
+	<utility>
+	<cassert>
+	<numeric>
+	<string>
+	<vector>
+	<utility>
+
+1523470915 source:d:\files\progetti\c++\cataclysm_am\src\jsonparser.cpp
+	"JsonParser.h"
 
