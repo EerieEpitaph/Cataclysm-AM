@@ -277,7 +277,7 @@
 	"Item.h"
 	<vector>
 
-1523393682 source:d:\files\progetti\c++\cataclysm_am\src\main.cpp
+1523435887 source:d:\files\progetti\c++\cataclysm_am\src\main.cpp
 	<exception>
 	<string>
 	<iostream>
@@ -289,7 +289,7 @@
 1523393682 d:\files\progetti\c++\cataclysm_am\src\util.h
 	<string>
 
-1523393682 d:\files\progetti\c++\cataclysm_am\src\item.h
+1523436420 d:\files\progetti\c++\cataclysm_am\src\item.h
 	<iostream>
 	<string.h>
 	<memory>
@@ -303,8 +303,133 @@
 	"Item.h"
 	<vector>
 
-1523395044 source:d:\files\progetti\c++\cataclysm_am\src\item.cpp
+1523435898 source:d:\files\progetti\c++\cataclysm_am\src\item.cpp
 	"../nlohmann/json.hpp"
 	"Item.h"
 	"Util.h"
+
+1523386667 source:d:\files\progetti\c++\cataclysm_am\libs\sqlite\shell.c
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<assert.h>
+	"sqlite3.h"
+	"sqlite3userauth.h"
+	<ctype.h>
+	<stdarg.h>
+	<signal.h>
+	<pwd.h>
+	<unistd.h>
+	<dirent.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<readline/readline.h>
+	<readline/history.h>
+	<editline/readline.h>
+	"linenoise.h"
+	<io.h>
+	<fcntl.h>
+	<windows.h>
+	<sys/time.h>
+	<sys/resource.h>
+	"windows.h"
+	<stdio.h>
+	<stdlib.h>
+	<errno.h>
+	<io.h>
+	<limits.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<assert.h>
+	<string.h>
+	<stdarg.h>
+	<stdio.h>
+	<string.h>
+	<assert.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+	<dirent.h>
+	<utime.h>
+	<sys/time.h>
+	"windows.h"
+	<io.h>
+	<direct.h>
+	<time.h>
+	<errno.h>
+	<assert.h>
+	<string.h>
+	<ctype.h>
+	<string.h>
+	<assert.h>
+	<stdio.h>
+	<string.h>
+	<assert.h>
+	<zlib.h>
+	<zlib.h>
+	<assert.h>
+	<string.h>
+	<stdio.h>
+
+1523386667 d:\files\progetti\c++\cataclysm_am\libs\sqlite\sqlite3.h
+	<stdarg.h>
+
+1523386667 source:d:\files\progetti\c++\cataclysm_am\libs\sqlite\sqlite3.c
+	"config.h"
+	<vxWorks.h>
+	<pthread.h>
+	"mingw.h"
+	"_mingw.h"
+	<stdarg.h>
+	<stdint.h>
+	<inttypes.h>
+	<intrin.h>
+	<cmnintrin.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<stddef.h>
+	<TargetConditionals.h>
+	<ctype.h>
+	<time.h>
+	<sys/sysctl.h>
+	<malloc/malloc.h>
+	<libkern/OSAtomic.h>
+	<malloc.h>
+	<pthread.h>
+	"windows.h"
+	<sys/cygwin.h>
+	<errno.h>
+	<process.h>
+	<math.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<sys/ioctl.h>
+	<unistd.h>
+	<sys/time.h>
+	<errno.h>
+	<sys/mman.h>
+	<sys/file.h>
+	<sys/param.h>
+	<semaphore.h>
+	<limits.h>
+	<sys/mount.h>
+	<utime.h>
+	<sys/dcmd_blk.h>
+	<sys/statvfs.h>
+	<dlfcn.h>
+	"sqlite_tcl.h"
+	"tcl.h"
+	"sqlite3rtree.h"
+	<unicode/utypes.h>
+	<unicode/uregex.h>
+	<unicode/ustring.h>
+	<unicode/ucol.h>
+	<unicode/ubrk.h>
+	<unicode/utf16.h>
+	<ctype.h>
+	<math.h>
 

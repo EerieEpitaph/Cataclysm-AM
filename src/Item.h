@@ -11,8 +11,6 @@
 #include "SDL_image.h"
 #include "Util.h"
 
-#define ITEM_ROOT "items/item_root.json"
-
 class Item
 {
 	private:

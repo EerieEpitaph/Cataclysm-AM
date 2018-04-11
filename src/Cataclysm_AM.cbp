@@ -45,31 +45,18 @@
 		<ExtraCommands>
 			<Add after="XCOPY $(#sdl2)\bin\*.dll $(TARGET_OUTPUT_DIR) /D /Y" />
 		</ExtraCommands>
-		<Unit filename="../nlohmann/adl_serializer.hpp" />
-		<Unit filename="../nlohmann/detail/conversions/from_json.hpp" />
-		<Unit filename="../nlohmann/detail/conversions/to_chars.hpp" />
-		<Unit filename="../nlohmann/detail/conversions/to_json.hpp" />
-		<Unit filename="../nlohmann/detail/exceptions.hpp" />
-		<Unit filename="../nlohmann/detail/input/binary_reader.hpp" />
-		<Unit filename="../nlohmann/detail/input/input_adapters.hpp" />
-		<Unit filename="../nlohmann/detail/input/lexer.hpp" />
-		<Unit filename="../nlohmann/detail/input/parser.hpp" />
-		<Unit filename="../nlohmann/detail/iterators/internal_iterator.hpp" />
-		<Unit filename="../nlohmann/detail/iterators/iter_impl.hpp" />
-		<Unit filename="../nlohmann/detail/iterators/iteration_proxy.hpp" />
-		<Unit filename="../nlohmann/detail/iterators/json_reverse_iterator.hpp" />
-		<Unit filename="../nlohmann/detail/iterators/primitive_iterator.hpp" />
-		<Unit filename="../nlohmann/detail/json_pointer.hpp" />
-		<Unit filename="../nlohmann/detail/json_ref.hpp" />
-		<Unit filename="../nlohmann/detail/macro_scope.hpp" />
-		<Unit filename="../nlohmann/detail/macro_unscope.hpp" />
-		<Unit filename="../nlohmann/detail/meta.hpp" />
-		<Unit filename="../nlohmann/detail/output/binary_writer.hpp" />
-		<Unit filename="../nlohmann/detail/output/output_adapters.hpp" />
-		<Unit filename="../nlohmann/detail/output/serializer.hpp" />
-		<Unit filename="../nlohmann/detail/value_t.hpp" />
-		<Unit filename="../nlohmann/json.hpp" />
-		<Unit filename="../nlohmann/json_fwd.hpp" />
+		<Unit filename="../libs/LinkedList().h" />
+		<Unit filename="../libs/LinkedList.h" />
+		<Unit filename="../libs/Tree().h" />
+		<Unit filename="../libs/Tree.h" />
+		<Unit filename="../libs/sqlite/shell.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../libs/sqlite/sqlite3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../libs/sqlite/sqlite3.h" />
+		<Unit filename="../libs/sqlite/sqlite3ext.h" />
 		<Unit filename="Actor.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
