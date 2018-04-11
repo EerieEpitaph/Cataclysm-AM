@@ -277,7 +277,7 @@
 	"Item.h"
 	<vector>
 
-1523435887 source:d:\files\progetti\c++\cataclysm_am\src\main.cpp
+1523437682 source:d:\files\progetti\c++\cataclysm_am\src\main.cpp
 	<exception>
 	<string>
 	<iostream>
@@ -285,16 +285,18 @@
 	"Util.h"
 	"Item.h"
 	"Container.h"
+	"../libs/sqlite/sqlite3.h"
 
 1523393682 d:\files\progetti\c++\cataclysm_am\src\util.h
 	<string>
 
-1523436420 d:\files\progetti\c++\cataclysm_am\src\item.h
+1523437593 d:\files\progetti\c++\cataclysm_am\src\item.h
 	<iostream>
 	<string.h>
 	<memory>
 	<vector>
 	<unordered_map>
+	"../libs/sqlite/sqlite3.h"
 	"SDL.h"
 	"SDL_image.h"
 	"Util.h"
@@ -303,8 +305,7 @@
 	"Item.h"
 	<vector>
 
-1523435898 source:d:\files\progetti\c++\cataclysm_am\src\item.cpp
-	"../nlohmann/json.hpp"
+1523436427 source:d:\files\progetti\c++\cataclysm_am\src\item.cpp
 	"Item.h"
 	"Util.h"
 

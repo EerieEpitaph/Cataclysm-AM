@@ -7,6 +7,7 @@
 #include <vector>
 #include <unordered_map>
 
+#include "../libs/sqlite/sqlite3.h"
 #include "SDL.h"
 #include "SDL_image.h"
 #include "Util.h"
