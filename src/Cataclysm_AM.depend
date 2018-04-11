@@ -290,13 +290,12 @@
 1523393682 d:\files\progetti\c++\cataclysm_am\src\util.h
 	<string>
 
-1523437593 d:\files\progetti\c++\cataclysm_am\src\item.h
+1523438453 d:\files\progetti\c++\cataclysm_am\src\item.h
 	<iostream>
 	<string.h>
 	<memory>
 	<vector>
 	<unordered_map>
-	"../libs/sqlite/sqlite3.h"
 	"SDL.h"
 	"SDL_image.h"
 	"Util.h"
