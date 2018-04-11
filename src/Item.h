@@ -57,17 +57,5 @@ class Item
         inline std::vector<uint16_t> getFlags(){return flags;}
 };
 
-class ItemDatabase
-{
-    private:
-        //MAP OF MAP. ItemGroup hashed gives the entire group. ItemName, hashed, gives the single item
-        std::unordered_map< uint32_t, std::unordered_map<uint32_t, Item&> > database;
-
-    public:
-        ItemDatabase(){}
-        Item& fetchItem(std::string itemGroup, std::string itemName);
-        void addItem(Item& item);
-        void importEntries(std::string path = ITEM_ROOT);
-};
 
 #endif /* ITEM_H_ */
