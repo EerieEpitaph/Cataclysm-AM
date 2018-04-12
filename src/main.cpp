@@ -7,7 +7,6 @@
 #include "Item.h"
 #include "Container.h"
 #include "JsonParser.h"
-#include "ItemDatabase.h"
 
 int main( int argc, char * argv[] )
 {

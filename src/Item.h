@@ -38,5 +38,20 @@ class Item
         inline std::string getName(){return name;}
 };
 
+class Database
+{
+    private:
+        std::unordered_map<uint32_t, Item&> database;
+
+    public:
+        Database(){};
+        Database(std::unordered_map<uint32_t, Item&> dat) : database(dat){}
+        Database(std::string rootPath);
+        inline std::unordered_map<uint32_t, Item&> getDatabase(){return database;}
+
+        void addItem(Item& toAdd){database.insert( {FNVHash(toAdd.getName()), toAdd} );}
+        Item& fetchItem(uint32_t hashd){return database.at(hashd);}
+};
+
 
 #endif /* ITEM_H_ */

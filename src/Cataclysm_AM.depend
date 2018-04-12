@@ -277,7 +277,7 @@
 	"Item.h"
 	<vector>
 
-1523532577 source:d:\files\progetti\c++\cataclysm_am\src\main.cpp
+1523533707 source:d:\files\progetti\c++\cataclysm_am\src\main.cpp
 	<exception>
 	<string>
 	<iostream>
@@ -286,12 +286,11 @@
 	"Item.h"
 	"Container.h"
 	"JsonParser.h"
-	"ItemDatabase.h"
 
 1523393682 d:\files\progetti\c++\cataclysm_am\src\util.h
 	<string>
 
-1523533145 d:\files\progetti\c++\cataclysm_am\src\item.h
+1523534034 d:\files\progetti\c++\cataclysm_am\src\item.h
 	<iostream>
 	<string.h>
 	<memory>
@@ -302,11 +301,11 @@
 	"Util.h"
 	"Magazine.h"
 
-1523448495 d:\files\progetti\c++\cataclysm_am\src\container.h
+1523533495 d:\files\progetti\c++\cataclysm_am\src\container.h
 	"Item.h"
 	<vector>
 
-1523533145 source:d:\files\progetti\c++\cataclysm_am\src\item.cpp
+1523533495 source:d:\files\progetti\c++\cataclysm_am\src\item.cpp
 	"Item.h"
 	"Util.h"
 
@@ -435,12 +434,12 @@
 	<ctype.h>
 	<math.h>
 
-1523533145 d:\files\progetti\c++\cataclysm_am\src\jsonparser.h
+1523533495 d:\files\progetti\c++\cataclysm_am\src\jsonparser.h
 	<iostream>
 	<fstream>
 	"../libs/json.hpp"
 
-1523533144 d:\files\progetti\c++\cataclysm_am\libs\json.hpp
+1523533495 d:\files\progetti\c++\cataclysm_am\libs\json.hpp
 	<algorithm>
 	<cassert>
 	<ciso646>
@@ -579,12 +578,12 @@
 	<vector>
 	<utility>
 
-1523533145 source:d:\files\progetti\c++\cataclysm_am\src\jsonparser.cpp
+1523533495 source:d:\files\progetti\c++\cataclysm_am\src\jsonparser.cpp
 	"JsonParser.h"
 
-1523533145 d:\files\progetti\c++\cataclysm_am\src\magazine.h
+1523533495 d:\files\progetti\c++\cataclysm_am\src\magazine.h
 
-1523532914 d:\files\progetti\c++\cataclysm_am\src\itemdatabase.h
+1523533603 d:\files\progetti\c++\cataclysm_am\src\itemdatabase.h
 	<unordered_map>
 	"ItemDatabase.h"
 
