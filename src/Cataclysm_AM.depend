@@ -290,7 +290,7 @@
 1523393682 d:\files\progetti\c++\cataclysm_am\src\util.h
 	<string>
 
-1523534034 d:\files\progetti\c++\cataclysm_am\src\item.h
+1523566938 d:\files\progetti\c++\cataclysm_am\src\item.h
 	<iostream>
 	<string.h>
 	<memory>
@@ -581,7 +581,7 @@
 1523533495 source:d:\files\progetti\c++\cataclysm_am\src\jsonparser.cpp
 	"JsonParser.h"
 
-1523533495 d:\files\progetti\c++\cataclysm_am\src\magazine.h
+1523534685 d:\files\progetti\c++\cataclysm_am\src\magazine.h
 
 1523533603 d:\files\progetti\c++\cataclysm_am\src\itemdatabase.h
 	<unordered_map>

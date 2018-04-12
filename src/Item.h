@@ -49,6 +49,7 @@ class Database
         Database(std::string rootPath);
         inline std::unordered_map<uint32_t, Item&> getDatabase(){return database;}
 
+        void addItem(uint32_t hashd, Item& toAdd){database.insert( {hashd, toAdd} );}
         void addItem(Item& toAdd){database.insert( {FNVHash(toAdd.getName()), toAdd} );}
         Item& fetchItem(uint32_t hashd){return database.at(hashd);}
 };
