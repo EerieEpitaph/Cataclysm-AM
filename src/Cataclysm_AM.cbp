@@ -62,6 +62,9 @@
 			<Option target="Debug" />
 		</Unit>
 		<Unit filename="Item.h" />
+		<Unit filename="ItemDatabase.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="JsonParser.cpp">
 			<Option target="Debug" />
 		</Unit>

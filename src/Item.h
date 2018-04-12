@@ -10,6 +10,7 @@
 #include "SDL.h"
 #include "SDL_image.h"
 #include "Util.h"
+#include "Magazine.h"
 
 class Item
 {
@@ -21,8 +22,8 @@ class Item
 
 		int32_t volume;
 		int32_t weight;
-		uint32_t charges;
-		Item* containedIn;
+        Magazine& mag;
+		Item& containedIn;
 
 		uint8_t bash;
 		uint8_t cut;
@@ -34,7 +35,7 @@ class Item
 		std::vector<uint16_t> flags;
 
 	public:
-
+        inline std::string getName(){return name;}
 };
 
 

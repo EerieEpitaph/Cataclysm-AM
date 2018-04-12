@@ -277,7 +277,7 @@
 	"Item.h"
 	<vector>
 
-1523519733 source:d:\files\progetti\c++\cataclysm_am\src\main.cpp
+1523532577 source:d:\files\progetti\c++\cataclysm_am\src\main.cpp
 	<exception>
 	<string>
 	<iostream>
@@ -286,11 +286,12 @@
 	"Item.h"
 	"Container.h"
 	"JsonParser.h"
+	"ItemDatabase.h"
 
 1523393682 d:\files\progetti\c++\cataclysm_am\src\util.h
 	<string>
 
-1523529764 d:\files\progetti\c++\cataclysm_am\src\item.h
+1523532816 d:\files\progetti\c++\cataclysm_am\src\item.h
 	<iostream>
 	<string.h>
 	<memory>
@@ -299,6 +300,7 @@
 	"SDL.h"
 	"SDL_image.h"
 	"Util.h"
+	"Magazine.h"
 
 1523448495 d:\files\progetti\c++\cataclysm_am\src\container.h
 	"Item.h"
@@ -579,4 +581,10 @@
 
 1523519370 source:d:\files\progetti\c++\cataclysm_am\src\jsonparser.cpp
 	"JsonParser.h"
+
+1523531455 d:\files\progetti\c++\cataclysm_am\src\magazine.h
+
+1523532914 d:\files\progetti\c++\cataclysm_am\src\itemdatabase.h
+	<unordered_map>
+	"ItemDatabase.h"
 
