@@ -68,6 +68,9 @@
 		<Unit filename="JsonParser.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
+		<Unit filename="Magazine.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="Part.h" />
 		<Unit filename="TexturePacker.h" />
 		<Unit filename="Tile.h" />
