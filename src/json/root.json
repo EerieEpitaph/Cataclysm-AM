@@ -1,0 +1,18 @@
+@test2.json
+
+{
+  "dai": 3.141,
+  "bappy": true,
+  "came": "Nisels",
+  "dothing": null,
+  "ealue": 42.99
+}
+
+#Comment
+{
+  "zompa": 3.141,
+  "42": true,
+  "dsad": "Niels",
+  "52": null,
+  "xc": 42.99
+}

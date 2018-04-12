@@ -1,12 +1,53 @@
 #include "JsonParser.h"
 
-json deserializeFile(std::string path)
+std::vector<json> importJSONs(std::string root)
 {
-    json j;
-    std::ifstream fileHandler(path);
+    //TODO: MAKE RECURSIVE PATH RELATIVE
+    std::string buf;
+    std::string line;
+    std::stack<char> curlyCount;
+    std::vector<json> jOut;
+    std::ifstream fileHandler(root);
 
-    if(fileHandler.is_open())
-        return json::parse(fileHandler);
+    if(!fileHandler.is_open())
+        throw std::logic_error("Bad file opening");
 
-    throw std::exception();
+    while(getline(fileHandler, line))
+    {
+        auto firstChar = line.find_first_not_of(' ');
+        if(firstChar == std::string::npos)
+            continue;
+
+        if( (firstChar >= 0 && firstChar <= line.length()) )
+        {
+            if( line[firstChar] == '@')
+            {
+                std::string linePath = extractPath(line.substr(firstChar+1, line.length()));
+                std::vector<json> inner = importJSONs(linePath);
+                for( json j : inner )
+                    jOut.push_back(j);
+                continue;
+            }
+
+            if( line[firstChar] == '{' )
+                curlyCount.push(line[firstChar]);
+            else if( line[firstChar] == '}' )
+                curlyCount.pop();
+
+            if(line[firstChar] != '#')
+            {
+                buf += line;
+                if(curlyCount.size() == 0 )
+                {
+                    jOut.push_back(json::parse(buf));
+                    buf.clear();
+                }
+            }
+        }
+        else
+            throw std::out_of_range("Line analysis failed");
+    }
+
+    fileHandler.close();
+    return jOut;
 }

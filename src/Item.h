@@ -14,22 +14,22 @@
 
 class Item
 {
-	public:
-		std::string group;
+	private:
+		std::string categ;
 		std::string ident;
 		std::string name;
 		std::string descr;
 
 		int32_t volume;
 		int32_t weight;
-        Magazine& mag;
-		Item& containedIn;
+        std::unique_ptr<Magazine> mag;
+		Item* containedIn;
 
 		uint8_t bash;
 		uint8_t cut;
 		uint8_t pierce;
 		uint32_t moves;
-		uint8_t toHit;
+		int8_t toHit;
 
 		SDL_Surface* icon; //TODO
 		std::vector<uint16_t> flags;

@@ -50,6 +50,9 @@
 		<Unit filename="../libs/Tree().h" />
 		<Unit filename="../libs/Tree.h" />
 		<Unit filename="../libs/json.hpp" />
+		<Unit filename="Action.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="Actor.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
@@ -74,12 +77,12 @@
 		<Unit filename="Part.h" />
 		<Unit filename="TexturePacker.h" />
 		<Unit filename="Tile.h" />
+		<Unit filename="Util.cpp" />
 		<Unit filename="Util.h" />
 		<Unit filename="Wearable.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="main.cpp" />
-		<Unit filename="test.json" />
 		<Extensions>
 			<code_completion />
 			<envvars />

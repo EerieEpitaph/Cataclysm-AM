@@ -10,8 +10,8 @@
 
 int main( int argc, char * argv[] )
 {
-    json j = deserializeFile("test.json");
+    std::vector<json> j = importJSONs(JSON_ROOT);
 
-    std::cout << j;
+    std::cout << j[0];
     return 0;
 }
