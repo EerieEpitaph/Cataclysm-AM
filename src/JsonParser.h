@@ -3,10 +3,17 @@
 
 #include <iostream>
 #include <fstream>
+#include <vector>
+#include <stack>
+#include <stdexcept>
+
+#include "Util.h"
 #include "../libs/json.hpp"
+
+#define JSON_ROOT "json/root.json"
 using json = nlohmann::json;
 
-json deserializeFile(std::string path);
+std::vector<json> importJSONs(std::string root);
 
 
 
