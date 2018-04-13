@@ -2,7 +2,7 @@
 
 std::vector<json> importJSONs(std::string root)
 {
-    //TODO: MAKE RECURSIVE PATH RELATIVE
+    std::string contextDir = extractDir(root);
     std::string buf;
     std::string line;
     std::stack<char> curlyCount;
@@ -23,7 +23,7 @@ std::vector<json> importJSONs(std::string root)
             if( line[firstChar] == '@')
             {
                 std::string linePath = extractPath(line.substr(firstChar+1, line.length()));
-                std::vector<json> inner = importJSONs(linePath);
+                std::vector<json> inner = importJSONs(contextDir + linePath);
                 for( json j : inner )
                     jOut.push_back(j);
                 continue;

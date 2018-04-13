@@ -11,7 +11,10 @@
 int main( int argc, char * argv[] )
 {
     std::vector<json> j = importJSONs(JSON_ROOT);
+    std::cout << j[2];
 
-    std::cout << j[0];
+    //std::string miao = "C:\\copromati\\test.cpp";
+    //std::cout << extractDir(miao);
+
     return 0;
 }

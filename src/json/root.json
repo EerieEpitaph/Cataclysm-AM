@@ -1,4 +1,6 @@
 @test2.json
+@subtest/test3.json
+@test3.json
 
 {
   "dai": 3.141,

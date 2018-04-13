@@ -5,7 +5,7 @@
 
 uint32_t FNVHash(std::string str);
 std::string extractPath(std::string path);
-
+std::string extractDir(std::string path);
 
 
 #endif /* UTIL_H_ */
