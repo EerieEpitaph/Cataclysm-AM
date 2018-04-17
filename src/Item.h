@@ -6,6 +6,7 @@
 #include <memory>
 #include <vector>
 #include <unordered_map>
+#include <bitset>
 
 #include "SDL.h"
 #include "SDL_image.h"
@@ -32,7 +33,7 @@ class Item
 		int8_t toHit;
 
 		SDL_Surface* icon; //TODO
-		std::vector<uint16_t> flags;
+        std::bitset<255> flags;
 
 	public:
         inline std::string getName(){return name;}
