@@ -52,12 +52,25 @@ std::vector<json> importJSONs(std::string root)
     return jOut;
 }
 
-void processJsons(std::vector<json> in)
+Database processJsons(std::vector<json> in)
 {
+    std::vector<uint32_t> flags;
 
+    for(json j : in)
+    {
+        if(j["I_AM"] == "flags")
+            flags = importFlags(j);
+    }
 }
 
 std::vector<uint32_t> importFlags(json j)
 {
+    std::vector<uint32_t> foundFlags;
 
+    //if(j["I_AM"] != "flags")
+    //   throw std::logic_error("Not a flag definition JSON");
+    //for(auto x : j["flags"])
+        //std::cout << x;
+
+    return foundFlags;
 }

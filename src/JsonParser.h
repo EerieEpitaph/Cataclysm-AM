@@ -7,6 +7,7 @@
 #include <stack>
 #include <stdexcept>
 
+#include "Database.h"
 #include "Util.h"
 #include "../libs/json.hpp"
 
@@ -15,7 +16,7 @@ using json = nlohmann::json;
 
 std::vector<json> importJSONs(std::string root);
 
-void processJsons(std::vector<json> in);
+Database processJsons(std::vector<json> in);
 std::vector<uint32_t> importFlags(json j);
 
 #endif // JSONPARSER_H_INCLUDED
