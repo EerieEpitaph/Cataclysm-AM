@@ -57,6 +57,10 @@
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="Container.h" />
+		<Unit filename="Database.cpp" />
+		<Unit filename="Database.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="Entity.h" />
 		<Unit filename="FlagControl.h">
 			<Option target="&lt;{~None~}&gt;" />
@@ -74,7 +78,6 @@
 		<Unit filename="Magazine.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="Part.h" />
 		<Unit filename="TexturePacker.h" />
 		<Unit filename="Tile.h" />
 		<Unit filename="Util.cpp" />

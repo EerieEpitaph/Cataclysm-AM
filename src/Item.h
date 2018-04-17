@@ -5,7 +5,7 @@
 #include <string.h>
 #include <memory>
 #include <vector>
-#include <unordered_map>
+#include <bitset>
 
 #include "SDL.h"
 #include "SDL_image.h"
@@ -32,27 +32,13 @@ class Item
 		int8_t toHit;
 
 		SDL_Surface* icon; //TODO
-		std::vector<uint16_t> flags;
+        std::vector<uint32_t> flags;
 
 	public:
         inline std::string getName(){return name;}
 };
 
-class Database
-{
-    private:
-        std::unordered_map<uint32_t, Item&> database;
 
-    public:
-        Database(){};
-        Database(std::unordered_map<uint32_t, Item&> dat) : database(dat){}
-        Database(std::string rootPath);
-        inline std::unordered_map<uint32_t, Item&> getDatabase(){return database;}
-
-        void addItem(uint32_t hashd, Item& toAdd){database.insert( {hashd, toAdd} );}
-        void addItem(Item& toAdd){database.insert( {FNVHash(toAdd.getName()), toAdd} );}
-        Item& fetchItem(uint32_t hashd){return database.at(hashd);}
-};
 
 
 #endif /* ITEM_H_ */

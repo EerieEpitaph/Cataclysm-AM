@@ -7,7 +7,7 @@
 class Container : public Item
 {
 	public:
-	    uint32_t space;
+	    uint32_t space; //In milliliters
 		std::vector<std::shared_ptr<Item>> contains;
 
 	public:

@@ -51,3 +51,13 @@ std::vector<json> importJSONs(std::string root)
     fileHandler.close();
     return jOut;
 }
+
+void processJsons(std::vector<json> in)
+{
+
+}
+
+std::vector<uint32_t> importFlags(json j)
+{
+
+}
