@@ -9,7 +9,7 @@ class Entity
     private:
         std::string name;
         std::string description;
-        std::vector<uint16_t> flags;
+        std::vector<uint32_t> flags;
 
 
     public:

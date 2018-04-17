@@ -5,11 +5,11 @@ class Magazine
 {
     private:
         uint32_t charges;
-        std::vector<uint16_t> flags;
+        std::vector<uint32_t> flags;
 
     public:
         inline uint32_t getCharges(){return charges;}
-        inline std::vector<uint16_t> getFlags(){return flags;}
+        inline std::vector<uint32_t> getFlags(){return flags;}
 };
 
 

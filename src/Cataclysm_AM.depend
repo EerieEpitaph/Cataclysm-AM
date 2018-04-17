@@ -290,19 +290,18 @@
 1523616593 d:\files\progetti\c++\cataclysm_am\src\util.h
 	<string>
 
-1523978124 d:\files\progetti\c++\cataclysm_am\src\item.h
+1523990097 d:\files\progetti\c++\cataclysm_am\src\item.h
 	<iostream>
 	<string.h>
 	<memory>
 	<vector>
-	<unordered_map>
 	<bitset>
 	"SDL.h"
 	"SDL_image.h"
 	"Util.h"
 	"Magazine.h"
 
-1523534685 d:\files\progetti\c++\cataclysm_am\src\container.h
+1523988498 d:\files\progetti\c++\cataclysm_am\src\container.h
 	"Item.h"
 	<vector>
 
@@ -435,7 +434,7 @@
 	<ctype.h>
 	<math.h>
 
-1523616593 d:\files\progetti\c++\cataclysm_am\src\jsonparser.h
+1523990262 d:\files\progetti\c++\cataclysm_am\src\jsonparser.h
 	<iostream>
 	<fstream>
 	<vector>
@@ -586,7 +585,7 @@
 1523616593 source:d:\files\progetti\c++\cataclysm_am\src\jsonparser.cpp
 	"JsonParser.h"
 
-1523975736 d:\files\progetti\c++\cataclysm_am\src\magazine.h
+1523986892 d:\files\progetti\c++\cataclysm_am\src\magazine.h
 
 1523533603 d:\files\progetti\c++\cataclysm_am\src\itemdatabase.h
 	<unordered_map>
@@ -594,4 +593,11 @@
 
 1523616593 source:d:\files\progetti\c++\cataclysm_am\src\util.cpp
 	"Util.h"
+
+1523990086 source:d:\files\progetti\c++\cataclysm_am\src\database.cpp
+	"Database.h"
+
+1523990085 d:\files\progetti\c++\cataclysm_am\src\database.h
+	"Item.h"
+	<unordered_map>
 
