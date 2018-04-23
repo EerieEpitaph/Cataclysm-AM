@@ -1,15 +1,16 @@
 #ifndef MAGAZINE_H_INCLUDED
 #define MAGAZINE_H_INCLUDED
 
-class Magazine
+#include "Item.h"
+
+class Magazine : public Item
 {
     private:
         uint32_t charges;
-        std::vector<uint32_t> flags;
 
     public:
+        Magazine();
         inline uint32_t getCharges(){return charges;}
-        inline std::vector<uint32_t> getFlags(){return flags;}
 };
 
 

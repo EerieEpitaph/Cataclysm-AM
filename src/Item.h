@@ -10,7 +10,8 @@
 #include "SDL.h"
 #include "SDL_image.h"
 #include "Util.h"
-#include "Magazine.h"
+
+#define MAX_BITSET 255
 
 class Item
 {
@@ -18,11 +19,13 @@ class Item
 		std::string categ;
 		std::string ident;
 		std::string name;
+		std::string plural;
 		std::string descr;
 
+		uint8_t condition;
 		int32_t volume;
 		int32_t weight;
-        std::unique_ptr<Magazine> mag;
+        std::unique_ptr<Item> mag;
 		Item* containedIn;
 
 		uint8_t bash;
@@ -32,9 +35,13 @@ class Item
 		int8_t toHit;
 
 		SDL_Surface* icon; //TODO
-        std::vector<uint32_t> flags;
+        std::bitset<MAX_BITSET> flags;
 
 	public:
+	    Item(){}
+	    Item(std::string categ, std::string ident, std::string name, std::string plural, std::string descr, uint8_t condition,
+             int32_t volume, int32_t weight, std::unique_ptr<Item> mag, Item* containedIn, uint8_t bash, uint8_t cut, uint8_t pierce,
+             uint32_t moves, int8_t toHit, SDL_Surface* icon, std::bitset<MAX_BITSET> flags);
         inline std::string getName(){return name;}
 };
 

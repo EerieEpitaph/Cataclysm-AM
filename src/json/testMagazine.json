@@ -1,0 +1,16 @@
+{
+  "I_AM" : "item",
+  "SPEC" : "magazine",
+  "NAME" : "Rechargable battery",
+  "PLURAL" : "Rechargable batteries",
+  "VOLUME" : 150,
+  "WEIGHT" : 100,
+  "CHARGES" : 100,
+  "FLAGS" :
+  [
+	"electric",
+	"rechargable",
+	"dense",
+	"combustive"
+  ]
+}

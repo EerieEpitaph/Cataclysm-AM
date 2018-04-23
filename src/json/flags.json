@@ -1,8 +1,8 @@
 {
   "I_AM" : "flags",
-  "flags" :
+  "FLAGS" :
   [
-	"NO",
-	"FORSE"
+	"no",
+	"forse"
   ]
 }

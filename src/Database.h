@@ -1,25 +1,29 @@
 #ifndef DATABASE_H_INCLUDED
 #define DATABASE_H_INCLUDED
 
+#include <string>
+#include <functional>
+
 #include "Item.h"
 #include <unordered_map>
 
 class Database
 {
     private:
-        std::vector<uint32_t> flags;
-        std::unordered_map<uint32_t, Item&> items;
+        static std::unordered_map<std::string, uint32_t> flags;
+        static std::unordered_map<std::string, Item&> items;
 
     public:
-        Database(){};
-        Database(std::unordered_map<uint32_t, Item&> dat) : items(dat){}
+        static inline std::unordered_map<std::string, uint32_t>& getFlags(){return flags;}
+        static inline std::unordered_map<std::string, Item&>& getItems(){return items;}
 
-        inline std::vector<uint32_t> getFlags();
-        inline std::unordered_map<uint32_t, Item&> getItems();
+        template <class K, class V>
+        static void addInto(std::unordered_map<K, V>& table, K hashd, V toAdd)
+        {table.insert( {hashd, toAdd} );}
 
-        void addItem(uint32_t hashd, Item& toAdd);
-        void addItem(Item& toAdd);
-        Item& fetchItem(uint32_t hashd);
+        template <class K, class V>
+        static V& fetchFrom(std::unordered_map<K,V> table, K hashd)
+        {return table.at(hashd);}
 };
 
 #endif // DATABASE_H_INCLUDED

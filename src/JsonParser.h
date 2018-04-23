@@ -9,6 +9,7 @@
 #include <stdexcept>
 
 #include "Item.h"
+#include "Magazine.h"
 #include "Database.h"
 #include "Util.h"
 #include "Exceptions.h"
@@ -17,9 +18,12 @@
 #define JSON_ROOT "json/root.json"
 using json = nlohmann::json;
 
+static uint32_t flagIndex = 0;
+
 std::vector<json> importJSONs(std::string root);
 Database processJsons(std::vector<json> in);
-std::vector<uint32_t> importFlags(json j);
-void importItem(std::unordered_map<uint32_t, Item&> items, json j);
+std::unordered_map<std::string, uint32_t> importFlags(json j);
+void importItem(std::unordered_map<std::string, Item&>& items, json j);
+Magazine& castMagazine(json j);
 
 #endif // JSONPARSER_H_INCLUDED

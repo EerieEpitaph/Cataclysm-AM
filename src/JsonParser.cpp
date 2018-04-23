@@ -55,8 +55,8 @@ std::vector<json> importJSONs(std::string root)
 Database processJsons(std::vector<json> in)
 {
     Database gameData;
-    std::vector<uint32_t> flags;
-    std::unordered_map<uint32_t, Item&> items;
+    std::unordered_map<std::string, uint32_t> flags;
+    std::unordered_map<std::string, Item&> items;
 
     for(json j : in)
     {
@@ -69,27 +69,30 @@ Database processJsons(std::vector<json> in)
     return gameData;
 }
 
-std::vector<uint32_t> importFlags(json j)
+std::unordered_map<std::string, uint32_t> importFlags(json j)
 {
-    std::vector<uint32_t> foundFlags;
+    std::unordered_map<std::string, uint32_t> foundFlags;
 
-    if(j["I_AM"] != "flags"){}
-       throw identifier_mismatch_exception();
-    for(std::string x : j["flags"])
+    for(std::string flagLiteral : j["FLAGS"])
     {
-        uint32_t tempHash = FNVHash(x);
-        if(!flagInVect(foundFlags, tempHash))
-            foundFlags.push_back(tempHash);
+        flagIndex++;
+        if(Database::getFlags().count(flagLiteral) == 0) //Avoid redefinition of flags
+            Database::addInto(foundFlags, flagLiteral, flagIndex);
         else
             throw redefinition_exception();
     }
     return foundFlags;
 }
 
-void importItem(std::unordered_map<uint32_t, Item&> items, json j)
+void importItem(std::unordered_map<std::string, Item&>& items, json j)
 {
     if(j["I_AM"] != "item"){}
         throw identifier_mismatch_exception();
 
     //switch based on "I_AM"
+}
+
+Magazine& castMagazine(json j)
+{
+
 }
