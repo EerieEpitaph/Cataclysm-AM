@@ -1,8 +1,2 @@
-{
-  "I_AM" : "flags",
-  "flags" :
-  [
-	"NO",
-	"FORSE"
-  ]
-}
+@flags.json
+@test.json

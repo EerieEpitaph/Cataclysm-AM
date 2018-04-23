@@ -11,10 +11,11 @@
 int main( int argc, char * argv[] )
 {
     std::vector<json> jsons = importJSONs(JSON_ROOT);
-    importFlags(jsons[3]);
+    std::vector<uint32_t> flags = importFlags(jsons[0]);
 
-    //std::string miao = "C:\\copromati\\test.cpp";
-    //std::cout << extractDir(miao);
+    for(uint32_t x : flags)
+        std::cout << x << ";";
+
 
     return 0;
 }

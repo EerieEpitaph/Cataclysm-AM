@@ -20,7 +20,7 @@ std::vector<json> importJSONs(std::string root)
 
         if( (firstChar >= 0 && firstChar <= line.length()) )
         {
-            if( line[firstChar] == '@')
+            if( line[firstChar] == '@') //Recursive includer
             {
                 std::string linePath = extractPath(line.substr(firstChar+1, line.length()));
                 std::vector<json> inner = importJSONs(contextDir + linePath);
@@ -29,12 +29,12 @@ std::vector<json> importJSONs(std::string root)
                 continue;
             }
 
-            if( line[firstChar] == '{' )
+            if( line[firstChar] == '{' ) //Curly-bracket stack
                 curlyCount.push(line[firstChar]);
             else if( line[firstChar] == '}' )
                 curlyCount.pop();
 
-            if(line[firstChar] != '#')
+            if(line[firstChar] != '#') //Comment
             {
                 buf += line;
                 if(curlyCount.size() == 0 )
@@ -45,7 +45,7 @@ std::vector<json> importJSONs(std::string root)
             }
         }
         else
-            throw std::out_of_range("Line analysis failed");
+            throw line_analysis_exception();
     }
 
     fileHandler.close();
@@ -54,23 +54,42 @@ std::vector<json> importJSONs(std::string root)
 
 Database processJsons(std::vector<json> in)
 {
+    Database gameData;
     std::vector<uint32_t> flags;
+    std::unordered_map<uint32_t, Item&> items;
 
     for(json j : in)
     {
         if(j["I_AM"] == "flags")
             flags = importFlags(j);
+        else if(j["I_AM"] == "item")
+            importItem(items, j);
     }
+
+    return gameData;
 }
 
 std::vector<uint32_t> importFlags(json j)
 {
     std::vector<uint32_t> foundFlags;
 
-    //if(j["I_AM"] != "flags")
-    //   throw std::logic_error("Not a flag definition JSON");
-    //for(auto x : j["flags"])
-        //std::cout << x;
-
+    if(j["I_AM"] != "flags"){}
+       throw identifier_mismatch_exception();
+    for(std::string x : j["flags"])
+    {
+        uint32_t tempHash = FNVHash(x);
+        if(!flagInVect(foundFlags, tempHash))
+            foundFlags.push_back(tempHash);
+        else
+            throw redefinition_exception();
+    }
     return foundFlags;
+}
+
+void importItem(std::unordered_map<uint32_t, Item&> items, json j)
+{
+    if(j["I_AM"] != "item"){}
+        throw identifier_mismatch_exception();
+
+    //switch based on "I_AM"
 }

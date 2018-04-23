@@ -6,8 +6,9 @@
 
 class Container : public Item
 {
-	public:
+	private:
 	    uint32_t space; //In milliliters
+	    uint32_t maxSpace; //Largest item that fits inside (i'd like to avoid storing spears inside cargo pants..)
 		std::vector<std::shared_ptr<Item>> contains;
 
 	public:

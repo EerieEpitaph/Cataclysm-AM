@@ -277,7 +277,7 @@
 	"Item.h"
 	<vector>
 
-1523992718 source:d:\files\progetti\c++\cataclysm_am\src\main.cpp
+1524469508 source:d:\files\progetti\c++\cataclysm_am\src\main.cpp
 	<exception>
 	<string>
 	<iostream>
@@ -287,8 +287,10 @@
 	"Container.h"
 	"JsonParser.h"
 
-1523616593 d:\files\progetti\c++\cataclysm_am\src\util.h
+1524468490 d:\files\progetti\c++\cataclysm_am\src\util.h
 	<string>
+	<vector>
+	<algorithm>
 
 1523990360 d:\files\progetti\c++\cataclysm_am\src\item.h
 	<iostream>
@@ -301,7 +303,7 @@
 	"Util.h"
 	"Magazine.h"
 
-1523990360 d:\files\progetti\c++\cataclysm_am\src\container.h
+1524469292 d:\files\progetti\c++\cataclysm_am\src\container.h
 	"Item.h"
 	<vector>
 
@@ -434,14 +436,17 @@
 	<ctype.h>
 	<math.h>
 
-1523990895 d:\files\progetti\c++\cataclysm_am\src\jsonparser.h
+1524470821 d:\files\progetti\c++\cataclysm_am\src\jsonparser.h
+	<unordered_map>
 	<iostream>
 	<fstream>
 	<vector>
 	<stack>
 	<stdexcept>
+	"Item.h"
 	"Database.h"
 	"Util.h"
+	"Exceptions.h"
 	"../libs/json.hpp"
 
 1523534685 d:\files\progetti\c++\cataclysm_am\libs\json.hpp
@@ -583,7 +588,7 @@
 	<vector>
 	<utility>
 
-1523992741 source:d:\files\progetti\c++\cataclysm_am\src\jsonparser.cpp
+1524470967 source:d:\files\progetti\c++\cataclysm_am\src\jsonparser.cpp
 	"JsonParser.h"
 
 1523990360 d:\files\progetti\c++\cataclysm_am\src\magazine.h
@@ -592,13 +597,18 @@
 	<unordered_map>
 	"ItemDatabase.h"
 
-1523616593 source:d:\files\progetti\c++\cataclysm_am\src\util.cpp
+1524468490 source:d:\files\progetti\c++\cataclysm_am\src\util.cpp
 	"Util.h"
 
 1523990360 source:d:\files\progetti\c++\cataclysm_am\src\database.cpp
 	"Database.h"
 
-1523990360 d:\files\progetti\c++\cataclysm_am\src\database.h
+1524327676 d:\files\progetti\c++\cataclysm_am\src\database.h
 	"Item.h"
 	<unordered_map>
+
+1524470939 d:\files\progetti\c++\cataclysm_am\src\exceptions.h
+	<exception>
+	<iostream>
+	<exception>
 
